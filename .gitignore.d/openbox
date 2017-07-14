@@ -1,0 +1,9 @@
+*
+!/.config
+!/.config/openbox
+!/.config/openbox/autostart
+!/.config/openbox/environment
+!/.config/openbox/menu.xml
+!/.config/openbox/rc.xml
+!/.gitignore.d
+!/.gitignore.d/openbox

@@ -3,13 +3,13 @@
 
 # Compton daemon with shadows
 #compton -b -c &
-pcmanfm --desktop &
-tint2 &
-tint2 -c /home/john/.config/tint2/vertical-switchblade.tint2rc &
-#xvkbd &
-onboard &
-conky -c /home/john/Computer/System/switchblade/Conky/Switchblade-conkyrc &
-volumeicon &
-guake &
 #udiskie &
+
+pcmanfm --desktop &
+tint2 -c /home/john/.config/tint2/vertical.tint2rc &
+tint2 -c /home/john/.config/tint2/tint2rc &
+conky -c /home/john/.config/conky/conkyrc &
+volumeicon &
+onboard &
+guake &
 xrandr --output eDP1 --auto --pos 0x2160 --output DP1 --auto --scale 2x2 --pos 0x0 --fb 3840x3984
