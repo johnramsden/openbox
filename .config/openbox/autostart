@@ -1,15 +1,30 @@
-#
-# These things are run when an Openbox X Session is started.
+## --------------- Openbox Autostart ----------------------- #
+#                                                            #
+# These things are run when an Openbox X Session is started. #
+# ---------------------------------------------------------- #
+
+# File browser
+pcmanfm --desktop &
+
+# tint2
+tint2 -c /home/john/.config/tint2/vertical.tint2rc &
+tint2 -c /home/john/.config/tint2/tint2rc &
+volumeicon &
+
+# Conky
+conky -c /home/john/.config/conky/conkyrc &
+
+# Multi-monitor
+#xrandr --output eDP1 --auto --pos 0x2160 
+#    --output DP1 --auto --scale 2x2 --pos 0x0 --fb 3840x3984 &
+
+# Applications
+onboard &
+guake
+
+###############################################################
+# Unused
 
 # Compton daemon with shadows
 #compton -b -c &
 #udiskie &
-
-pcmanfm --desktop &
-tint2 -c /home/john/.config/tint2/vertical.tint2rc &
-tint2 -c /home/john/.config/tint2/tint2rc &
-conky -c /home/john/.config/conky/conkyrc &
-volumeicon &
-onboard &
-guake &
-xrandr --output eDP1 --auto --pos 0x2160 --output DP1 --auto --scale 2x2 --pos 0x0 --fb 3840x3984
